@@ -15,9 +15,8 @@ Gem::Specification.new do |gemspec|
   gemspec.require_paths = %w(lib)
   gemspec.rubygems_version = "1.3.5"
   gemspec.summary = %q{A Real Stylesheet Framework}
-  gemspec.add_runtime_dependency 'sass', '~> 3.1.0'
-  gemspec.add_runtime_dependency 'chunky_png', '~> 0.9.0'
-
+  gemspec.add_dependency('chunky_png', '~> 0.9.0')
+  gemspec.add_dependency('sass', '~> 3.1.0')
   gemspec.files = %w(README.markdown LICENSE.markdown VERSION.yml Rakefile)
   gemspec.files += Dir.glob("bin/*")
   gemspec.files += Dir.glob("examples/**/*.*")
